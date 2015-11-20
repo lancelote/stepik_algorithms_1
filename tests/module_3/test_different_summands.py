@@ -1,4 +1,3 @@
-from collections import namedtuple
 from unittest import TestCase
 
 from src.module_3.different_summands import different_summands
