@@ -5,4 +5,3 @@
 - [Module 4: Жадные алгоритмы](notes/module_4)
   - Введение
   - [Коды Хаффмана](notes/module_4/huffman_coding.md)
-
