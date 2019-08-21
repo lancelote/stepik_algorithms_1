@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from src.module_3.section_dot_coverage import section_dot_coverage
+from python.src.module_3.section_dot_coverage import section_dot_coverage
 
 
 class TestSectionDotCoverage(TestCase):

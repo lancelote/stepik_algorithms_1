@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from src.module_3.different_summands import different_summands
+from python.src.module_3.different_summands import different_summands
 
 
 class TestSectionDotCoverage(TestCase):

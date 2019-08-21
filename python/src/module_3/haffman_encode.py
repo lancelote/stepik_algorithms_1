@@ -1,5 +1,5 @@
-from heapq import heappush, heappop, heapify
 from collections import Counter
+from heapq import heappush, heappop, heapify
 
 
 def encode(symb2freq):

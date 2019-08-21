@@ -1,7 +1,7 @@
 from collections import namedtuple
 from unittest import TestCase
 
-from src.module_3.continuous_backpack import continuous_backpack
+from src.module_3 import continuous_backpack
 
 
 class TestSectionDotCoverage(TestCase):
