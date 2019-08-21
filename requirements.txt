@@ -1,1 +1,2 @@
 jupyter
+pytest==5.1.1
