@@ -21,3 +21,4 @@
         - [Rust](rust/src/module_1/fibonacci.rs)
     - Last Fibonacci Digit
         - [Python](python/src/module_1/fibonacci_last.py)
+        - [Rust](rust/src/module_1/fibonacci_last.rs)
