@@ -19,3 +19,5 @@
     - Small Fibonacci Number
         - [Python](python/src/module_1/fibonacci.py)
         - [Rust](rust/src/module_1/fibonacci.rs)
+    - Last Fibonacci Digit
+        - [Python](python/src/module_1/fibonacci_last.py)
