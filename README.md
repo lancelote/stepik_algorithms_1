@@ -22,3 +22,5 @@
     - Last Fibonacci Digit
         - [Python](python/src/module_1/fibonacci_last.py)
         - [Rust](rust/src/module_1/fibonacci_last.rs)
+    - Big Fibonacci by Module
+        - [Python](python/src/module_1/big_fibonacci.py)
