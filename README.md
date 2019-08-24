@@ -24,3 +24,4 @@
         - [Rust](rust/src/module_1/fibonacci_last.rs)
     - Big Fibonacci by Module
         - [Python](python/src/module_1/big_fibonacci.py)
+        - [Rust](rust/src/module_1/big_fibonacci.rs)
