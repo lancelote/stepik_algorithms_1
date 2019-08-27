@@ -5,7 +5,7 @@
 - [x] 01 - [Обзор](notes/module_1.ipynb)
 - [x] 02 - [Введение: теория и задачи](notes/module_2.ipynb)
 - [x] 03 - Введение: практика и разбор задач
-- [ ] 04 - Жадные алгоритмы: теория и задачи
+- [ ] 04 - [Жадные алгоритмы: теория и задачи](notes/module_4.ipynb)
 - [ ] 05 - Жадные алгоритмы: практика и разбор задач
 - [ ] 06 - Разделяй и властвуй: теория и задачи
 - [ ] 07 - Разделяй и властвуй: практика и разбор задач
@@ -15,7 +15,7 @@
 
 ## Solutions
 
-- Module 1
+- Module 2
     - Small Fibonacci Number
         - [Python](python/src/module_1/fibonacci.py)
         - [Rust](rust/src/module_1/fibonacci.rs)
