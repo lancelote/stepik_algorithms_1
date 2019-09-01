@@ -28,3 +28,6 @@
     - GCD
         - [Python](python/src/module_1/gcd.py)
         - [Rust](rust/src/module_1/gcd.rs)
+- Module 4
+    - Section by Dots Coverage
+        - [Python](python/src/module_4/section_dot_coverage.py)

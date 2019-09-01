@@ -6,3 +6,6 @@
 
 # Rust
 target/
+
+# mypy
+.mypy_cache

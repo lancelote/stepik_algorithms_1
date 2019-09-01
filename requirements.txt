@@ -1,2 +1,4 @@
 jupyter
 pytest==5.1.1
+mypy==0.720
+pur==5.2.2

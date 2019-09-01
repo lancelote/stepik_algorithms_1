@@ -1,28 +1,19 @@
-def section_dot_coverage(sections):
-    """Покрыть отрезки точками
+from typing import Tuple, List
 
-    Args:
-        sections (list(tuple(int, int)): список отрезков
+Section = Tuple[int, int]
 
-    Returns:
-        list(int, list())
-    """
+
+def section_dot_coverage(sections: List[Tuple]) -> List[int]:
     sections = sorted(sections, key=lambda x: x[1])
-    dots = []
+    dots: List[int] = []
 
     for section in sections:
-        if len(dots) == 0 or section[0] > dots[-1]:
+        if not dots or section[0] > dots[-1]:
             dots.append(section[1])
-
-    return [len(dots), dots]
+    return dots
 
 
 def main():
-    """Start input processing
-
-    Returns:
-        None
-    """
     data = list()
     n = int(input())
 
@@ -30,9 +21,10 @@ def main():
         a, b = map(int, input().split())
         data.append((a, b))
 
-    length, dots = section_dot_coverage(data)
-    print(length)
+    dots = section_dot_coverage(data)
+    print(len(dots))
     print(' '.join(map(str, dots)))
+
 
 if __name__ == '__main__':
     main()
