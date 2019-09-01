@@ -17,17 +17,18 @@
 
 - Module 2
     - Small Fibonacci Number
-        - [Python](python/src/module_1/fibonacci.py)
-        - [Rust](rust/src/module_1/fibonacci.rs)
+        - [Python](python/src/module_2/fibonacci.py)
+        - [Rust](rust/src/module_2/fibonacci.rs)
     - Last Fibonacci Digit
-        - [Python](python/src/module_1/fibonacci_last.py)
-        - [Rust](rust/src/module_1/fibonacci_last.rs)
+        - [Python](python/src/module_2/fibonacci_last.py)
+        - [Rust](rust/src/module_2/fibonacci_last.rs)
     - Big Fibonacci by Module
-        - [Python](python/src/module_1/big_fibonacci.py)
-        - [Rust](rust/src/module_1/big_fibonacci.rs)
+        - [Python](python/src/module_2/big_fibonacci.py)
+        - [Rust](rust/src/module_2/big_fibonacci.rs)
     - GCD
-        - [Python](python/src/module_1/gcd.py)
-        - [Rust](rust/src/module_1/gcd.rs)
+        - [Python](python/src/module_2/gcd.py)
+        - [Rust](rust/src/module_2/gcd.rs)
 - Module 4
     - Section by Dots Coverage
         - [Python](python/src/module_4/section_dot_coverage.py)
+        - [Rust](rust/src/module_4/section_dot_coverage.rs)
