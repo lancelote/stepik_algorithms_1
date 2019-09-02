@@ -32,3 +32,5 @@
     - Section by Dots Coverage
         - [Python](python/src/module_4/section_dot_coverage.py)
         - [Rust](rust/src/module_4/section_dot_coverage.rs)
+    - Continuous Backpack
+        - [Python](python/src/module_4/continuous_backpack.py)
