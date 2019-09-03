@@ -4,7 +4,7 @@
 /// # Examples
 ///
 /// ```
-/// # use rust_solutions::module_1::fibonacci::fibonacci;
+/// # use rust_solutions::module_2::fibonacci::fibonacci;
 /// assert_eq!(fibonacci(8), 21);
 /// ```
 

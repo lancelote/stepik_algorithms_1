@@ -1,7 +1,8 @@
 test:
 	PYTHONPATH=python/src python -m pytest python/tests
+	cargo test --manifest-path=rust/Cargo.toml
 
-lint:
+check:
 	python -m mypy python/src/module_* --ignore-missing-imports
 	cargo check --manifest-path=rust/Cargo.toml
 

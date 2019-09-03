@@ -3,7 +3,7 @@
 /// # Examples
 ///
 /// ```
-/// # use rust_solutions::module_1::fibonacci_last::fib_last;
+/// # use rust_solutions::module_2::fibonacci_last::fib_last;
 /// assert_eq!(fib_last(10), 5);
 /// ```
 
