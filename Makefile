@@ -11,3 +11,6 @@ install:
 
 deps:
 	pur -r requirements.txt
+
+clean:
+	rm -rf rust/target
