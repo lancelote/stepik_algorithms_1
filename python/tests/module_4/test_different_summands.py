@@ -1,10 +1,11 @@
-from unittest import TestCase
+import pytest
 
 from module_4.different_summands import different_summands
 
 
-class TestSectionDotCoverage(TestCase):
-
-    def test_returns_correct_result(self):
-        self.assertEqual(different_summands(4), [2, [1, 3]])
-        self.assertEqual(different_summands(6), [3, [1, 2, 3]])
+@pytest.mark.parametrize('n,summands', [
+    (4, [1, 3]),
+    (6, [1, 2, 3]),
+])
+def test_different_summands(n, summands):
+    assert different_summands(n) == summands

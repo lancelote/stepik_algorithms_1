@@ -1,37 +1,34 @@
-def different_summands(number):
-    """Найти максимальное число слагаемых
+from typing import List
 
-    Args:
-        number (int): сумма слагаемых
 
-    Returns:
-        list(int, list()): число лагаемых и их список
-    """
+def different_summands(number: int) -> List[int]:
+    """Find unique int summands of a given number."""
     summand = 1
     remaining = number
     summands = []
+
     while True:
         if remaining == 0:
             break
-        if remaining - summand < summand + 1:
+        # If after a summand subtraction we will end up with a number which is
+        # less or equal to summand itself we will be stuck as the remaining
+        # part can not be expressed with new unique summands so we have to stop
+        # here and simply and remaining part as one big summand
+        if remaining - summand <= summand:
             summands.append(remaining)
             break
         summands.append(summand)
         remaining -= summand
         summand += 1
-    return [len(summands), summands]
+    return summands
 
 
 def main():
-    """Start input processing
-
-    Returns:
-        None
-    """
     number = int(input())
-    length, summands = different_summands(number)
-    print(length)
+    summands = different_summands(number)
+    print(len(summands))
     print(' '.join(map(str, summands)))
+
 
 if __name__ == '__main__':
     main()
