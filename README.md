@@ -37,3 +37,4 @@
         - [Rust](rust/src/module_4/continuous_backpack.rs)
     - Unique Summands
         - [Python](python/src/module_4/different_summands.py)
+        - [Rust](rust/src/module_4/different_summands.rs)
