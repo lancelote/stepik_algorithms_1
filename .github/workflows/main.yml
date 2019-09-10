@@ -1,0 +1,36 @@
+name: main
+
+on: push
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: prepare Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+
+    - name: install
+      run: make -C python install
+
+    - name: test
+      run: make -C python test
+
+    - name: lint
+      run: make -C python lint
+  
+  rust:
+    runs-on: ubuntu-latest
+  
+      steps:
+    - uses: actions/checkout@v1
+
+    - name: build
+      run: make -C rust build
+
+    - name: test
+      run: make -C rust test
