@@ -1,16 +1,19 @@
 test:
-	PYTHONPATH=python/src python -m pytest python/tests
-	cargo test --manifest-path=rust/Cargo.toml
+	$(MAKE) -C test python
+	$(MAKE) -C test rust
 
 check:
-	python -m mypy python/src/module_* --ignore-missing-imports
-	cargo check --manifest-path=rust/Cargo.toml
+	$(MAKE) -C python lint
+	$(MAKE) -C rust check
 
 install:
-	python -m pip install -r requirements.txt
+	$(MAKE) -C python install
 
 deps:
-	pur -r requirements.txt
+	$(MAKE) -C python deps
 
 clean:
-	rm -rf rust/target
+	$(MAKE) -C rust clean
+
+build:
+	$(MAKE) -C rust build
