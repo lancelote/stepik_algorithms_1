@@ -40,3 +40,4 @@
         - [Rust](rust/src/module_4/different_summands.rs)
     - Huffman Code
         - [Python](python/src/module_4/huffman_code.py)
+        - [Python (simple solution)](python/src/module_4/huffman_simple_solution.py)
