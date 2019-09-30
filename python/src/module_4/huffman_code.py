@@ -64,7 +64,8 @@ class Tree:
 
     @classmethod
     def _construct_tree(cls, frequencies: List[Tuple[str, int]]) -> Node:
-        heap = [Leaf(value=value, char=char) for (char, value) in frequencies]
+        heap: List[Node] = [
+            Leaf(value=value, char=char) for (char, value) in frequencies]
         heapq.heapify(heap)
 
         if len(heap) == 1:
