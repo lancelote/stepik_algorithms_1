@@ -41,3 +41,5 @@
     - Huffman Code
         - [Python](python/src/module_4/huffman_code.py)
         - [Python (simple solution)](python/src/module_4/huffman_simple_solution.py)
+    - Huffman Decode
+        - [Python](python/src/module_4/huffman_decode.py)
