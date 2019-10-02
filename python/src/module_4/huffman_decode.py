@@ -1,29 +1,28 @@
-from typing import Dict, Optional
+from abc import ABCMeta, abstractmethod
+from typing import Dict
 
 
-# ToDo: split Node into Branch and Leaf
-class Node:
-    def __init__(self, code: str, value: str = None):
-        self.code = code
-        self.value = value
-        self.children: Optional[Dict[str, Node]] = None
-
-    def decode(self, encoded_string: str, pos: int = 0) -> str:
-        if self.value:  # Leaf
-            yield self.value
-        else:  # Branch
-            branch = encoded_string[pos]
-            yield from self.children[branch]
+class Node(metaclass=ABCMeta):
+    @abstractmethod
+    def decode(self, encoded_string: str, pos: int) -> str:
+        ...
 
 
 class Branch(Node):
-    def __init__(self):
-        pass
+    def __init__(self, lf: Node, ri: Node):
+        self.children = {'0': lf, '1': ri}
+
+    def decode(self, encoded_string: str, pos: int) -> str:
+        code = encoded_string[pos]
+        yield from self.children[code].decode(encoded_string, pos + 1)
 
 
 class Leaf(Node):
-    def __init__(self):
-        pass
+    def __init__(self, char: str):
+        self.char = char
+
+    def decode(self, encoded_string: str, pos: int) -> str:
+        yield self.char
 
 
 class Tree:
@@ -32,7 +31,7 @@ class Tree:
 
     @classmethod
     def from_dict(cls, decode_dict: Dict[str, str]) -> 'Tree':
-        root = Node()
+        root = Branch()
         for k, v in decode_dict.values():
             pass
         return Tree(root)
