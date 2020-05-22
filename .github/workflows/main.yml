@@ -34,3 +34,6 @@ jobs:
 
     - name: test
       run: make -C rust test
+
+    - name: check
+      run: make -C rust check
