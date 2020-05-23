@@ -1,6 +1,6 @@
 test:
-	$(MAKE) -C test python
-	$(MAKE) -C test rust
+	$(MAKE) -C python test
+	$(MAKE) -C rust test
 
 check:
 	$(MAKE) -C python lint
