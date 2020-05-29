@@ -1,6 +1,6 @@
 import pytest
 
-from module_2.fibonacci_last import fib_digit
+from src.module_2.fibonacci_last import fib_digit
 
 
 @pytest.mark.parametrize(

@@ -1,6 +1,6 @@
 import pytest
 
-from module_4.huffman_decode import decode
+from src.module_4.huffman_decode import decode
 
 
 @pytest.mark.parametrize(

@@ -3,7 +3,7 @@ name: main
 on: push
 
 jobs:
-  python:
+  verify:
     runs-on: ubuntu-latest
 
     steps:

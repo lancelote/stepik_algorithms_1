@@ -1,6 +1,6 @@
 import pytest
 
-from module_4.different_summands import different_summands
+from src.module_4.different_summands import different_summands
 
 
 @pytest.mark.parametrize("n,summands", [(4, [1, 3]), (6, [1, 2, 3]),])

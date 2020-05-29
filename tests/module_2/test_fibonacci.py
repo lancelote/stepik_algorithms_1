@@ -1,6 +1,6 @@
 import pytest
 
-from module_2.fibonacci import fibonacci
+from src.module_2.fibonacci import fibonacci
 
 
 @pytest.mark.parametrize("n,expected", [(1, 1), (2, 1), (3, 2), (8, 21),])
