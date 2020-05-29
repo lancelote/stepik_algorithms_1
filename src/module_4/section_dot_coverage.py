@@ -23,8 +23,8 @@ def main():
 
     dots = section_dot_coverage(data)
     print(len(dots))
-    print(' '.join(map(str, dots)))
+    print(" ".join(map(str, dots)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

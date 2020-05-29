@@ -4,9 +4,6 @@
 # Jupyter
 .ipynb_checkpoints/
 
-# Rust
-target/
-
 # mypy
 .mypy_cache
 

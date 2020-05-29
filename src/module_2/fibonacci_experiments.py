@@ -144,8 +144,10 @@ def last_n_fib(n):
 
 
 def matrix_multiply(a, b, m):
-    return [[(a[r][0] * b[0][c] + a[r][1] * b[1][c]) %
-             m for c in range(2)] for r in range(2)]
+    return [
+        [(a[r][0] * b[0][c] + a[r][1] * b[1][c]) % m for c in range(2)]
+        for r in range(2)
+    ]
 
 
 def matrix_power(a, n, m):

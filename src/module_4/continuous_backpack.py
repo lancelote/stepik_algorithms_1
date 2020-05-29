@@ -31,5 +31,5 @@ def main():
     print(max_value(capacity, data))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

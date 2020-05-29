@@ -27,8 +27,8 @@ def main():
     number = int(input())
     summands = different_summands(number)
     print(len(summands))
-    print(' '.join(map(str, summands)))
+    print(" ".join(map(str, summands)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

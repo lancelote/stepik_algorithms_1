@@ -9,31 +9,16 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: prepare Python
+    - name: prepare
       uses: actions/setup-python@v1
       with:
-        python-version: 3.7
+        python-version: 3.8
 
     - name: install
-      run: make -C python install
+      run: pip install -r requirements.txt
 
     - name: test
-      run: make -C python test
+      run: pytest tests
 
     - name: lint
-      run: make -C python lint
-  
-  rust:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v1
-
-    - name: build
-      run: make -C rust build
-
-    - name: test
-      run: make -C rust test
-
-    - name: check
-      run: make -C rust check
+      run: pre-commit run --all-files

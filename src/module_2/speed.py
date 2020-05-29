@@ -2,19 +2,19 @@ import math
 
 
 def f1(n):
-    return 3**math.log(n, 2)
+    return 3 ** math.log(n, 2)
 
 
 def f2(n):
-    return n**math.log(n, 2)
+    return n ** math.log(n, 2)
 
 
 def f3(n):
-    return 2**n
+    return 2 ** n
 
 
 def f4(n):
-    return 4**n
+    return 4 ** n
 
 
 def f5(n):
@@ -30,15 +30,15 @@ def f7(n):
 
 
 def f8(n):
-    return n**2
+    return n ** 2
 
 
 def f9(n):
-    return 7**math.log(n, 2)
+    return 7 ** math.log(n, 2)
 
 
 def f10(n):
-    return 2**(2**n)
+    return 2 ** (2 ** n)
 
 
 def f11(n):
@@ -46,11 +46,11 @@ def f11(n):
 
 
 def f12(n):
-    return (math.log(n, 2))**2
+    return (math.log(n, 2)) ** 2
 
 
 def f13(n):
-    return (math.log(n, 2))**(math.log(n, 2))
+    return (math.log(n, 2)) ** (math.log(n, 2))
 
 
 def f14(n):
@@ -58,7 +58,7 @@ def f14(n):
 
 
 def f15(n):
-    return n/(math.log(n, 5))
+    return n / (math.log(n, 5))
 
 
 def f16(n):
@@ -66,7 +66,7 @@ def f16(n):
 
 
 def f17(n):
-    return n**(math.sqrt(n))
+    return n ** (math.sqrt(n))
 
 
 def test(n):
@@ -89,4 +89,4 @@ def test(n):
     # print("17 :", int(f17(n)))
 
 
-test(10**50)
+test(10 ** 50)

@@ -16,30 +16,13 @@
 ## Solutions
 
 - Module 2
-    - Small Fibonacci Number
-        - [Python](python/src/module_2/fibonacci.py)
-        - [Rust](rust/src/module_2/fibonacci.rs)
-    - Last Fibonacci Digit
-        - [Python](python/src/module_2/fibonacci_last.py)
-        - [Rust](rust/src/module_2/fibonacci_last.rs)
-    - Big Fibonacci by Module
-        - [Python](python/src/module_2/big_fibonacci.py)
-        - [Rust](rust/src/module_2/big_fibonacci.rs)
-    - GCD
-        - [Python](python/src/module_2/gcd.py)
-        - [Rust](rust/src/module_2/gcd.rs)
+    - [Small Fibonacci Number](src/module_2/fibonacci.py)
+    - [Last Fibonacci Digit](src/module_2/fibonacci_last.py)
+    - [Big Fibonacci by Module](src/module_2/big_fibonacci.py)
+    - [GCD](src/module_2/gcd.py)
 - Module 4
-    - Section by Dots Coverage
-        - [Python](python/src/module_4/section_dot_coverage.py)
-        - [Rust](rust/src/module_4/section_dot_coverage.rs)
-    - Continuous Backpack
-        - [Python](python/src/module_4/continuous_backpack.py)
-        - [Rust](rust/src/module_4/continuous_backpack.rs)
-    - Unique Summands
-        - [Python](python/src/module_4/different_summands.py)
-        - [Rust](rust/src/module_4/different_summands.rs)
-    - Huffman Code
-        - [Python](python/src/module_4/huffman_code.py)
-        - [Python (simple solution)](python/src/module_4/huffman_simple_solution.py)
-    - Huffman Decode
-        - [Python](python/src/module_4/huffman_decode.py)
+    - [Section by Dots Coverage](src/module_4/section_dot_coverage.py)
+    - [Continuous Backpack](src/module_4/continuous_backpack.py)
+    - [Unique Summands](src/module_4/different_summands.py)
+    - [Huffman Code](src/module_4/huffman_code.py)
+    - [Huffman Decode](src/module_4/huffman_decode.py)
