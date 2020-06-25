@@ -1,29 +1,32 @@
-from typing import Tuple, List
-
-Section = Tuple[int, int]
+from typing import List, NamedTuple
 
 
-def section_dot_coverage(sections: List[Tuple]) -> List[int]:
-    sections = sorted(sections, key=lambda x: x[1])
+class Section(NamedTuple):
+    start: int
+    end: int
+
+
+def section_dot_coverage(sections: List[Section]) -> List[int]:
+    sections = sorted(sections, key=lambda x: x.end)
     dots: List[int] = []
 
     for section in sections:
-        if not dots or section[0] > dots[-1]:
-            dots.append(section[1])
+        if not dots or section.start > dots[-1]:
+            dots.append(section.end)
     return dots
 
 
-def main():
+def main() -> None:
     data = list()
     n = int(input())
 
     for _ in range(n):
-        a, b = map(int, input().split())
-        data.append((a, b))
+        start, end = [int(x) for x in input().split()]
+        data.append(Section(start, end))
 
     dots = section_dot_coverage(data)
     print(len(dots))
-    print(" ".join(map(str, dots)))
+    print(" ".join(str(dot) for dot in dots))
 
 
 if __name__ == "__main__":
