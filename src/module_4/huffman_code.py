@@ -49,8 +49,8 @@ class Tree:
 
     @classmethod
     def from_string(cls, string: str) -> Tree:
-        frequency = Counter(string).most_common()
-        tree = Tree(root=cls._construct_tree(frequency), string=string)
+        frequencies = Counter(string).most_common()
+        tree = Tree(root=cls._construct_tree(frequencies), string=string)
         tree._construct_encode_dict()
         return tree
 
