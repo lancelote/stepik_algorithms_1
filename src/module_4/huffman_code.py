@@ -57,7 +57,8 @@ class Tree:
     def get_encoded_string(self) -> str:
         return "".join(self._encode_dict[char] for char in self.string)
 
-    def get_encode_dict_length(self) -> int:
+    @property
+    def encode_dict_length(self) -> int:
         return len(self._encode_dict)
 
     def print_encode_dict(self) -> None:
@@ -94,7 +95,7 @@ def main() -> None:
     tree = Tree.from_string(string)
     encoded_string = tree.get_encoded_string()
 
-    print(f"{tree.get_encode_dict_length()} {len(encoded_string)}")
+    print(f"{tree.encode_dict_length} {len(encoded_string)}")
     tree.print_encode_dict()
     print(encoded_string)
 
