@@ -50,8 +50,7 @@ class Tree:
     @classmethod
     def from_string(cls, string: str) -> Tree:
         frequencies = Counter(string).most_common()
-        tree = Tree(root=cls._construct_tree(frequencies), string=string)
-        tree._construct_encode_dict()
+        tree = Tree(root=Tree._construct_tree(frequencies), string=string)
         return tree
 
     def get_encoded_string(self) -> str:
@@ -65,8 +64,8 @@ class Tree:
         for k, v in self._encode_dict.items():
             print(f"{k}: {v}")
 
-    @classmethod
-    def _construct_tree(cls, frequencies: List[Tuple[str, int]]) -> Node:
+    @staticmethod
+    def _construct_tree(frequencies: List[Tuple[str, int]]) -> Node:
         heap: List[Node] = [
             Leaf(value=value, char=char) for (char, value) in frequencies
         ]
