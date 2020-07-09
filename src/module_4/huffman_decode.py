@@ -6,7 +6,7 @@ def decode(string: str, codes: Dict[str, str]) -> str:
     current_code: List[str] = []
     for char in string:
         current_code.append(char)
-        if char == "0":
+        if char == "0" or (char == "1" and "1" in codes):
             decoded_string.append(codes["".join(current_code)])
             current_code = []
     if current_code:
