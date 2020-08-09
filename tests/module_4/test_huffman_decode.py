@@ -1,19 +1,28 @@
+from collections import deque
+
 import pytest
 
-from src.module_4.huffman_decode import decode
+from src.module_4.huffman_decode import Node
 
 
-@pytest.mark.parametrize(
-    "encoded_string,decode_dict,decoded_string",
-    [
-        ("0", {"0": "a"}, "a"),
-        (
-            "01001100100111",
-            {"0": "a", "10": "b", "110": "c", "111": "d"},
-            "abacabad",
-        ),
-        ("1111100000", {"0": "y", "1": "z"}, "zzzzzyyyyy"),
-    ],
-)
-def test_decode(encoded_string, decode_dict, decoded_string):
-    assert decode(encoded_string, decode_dict) == decoded_string
+@pytest.fixture
+def codes():
+    return {
+        "a": deque("0"),
+        "b": deque("10"),
+        "c": deque("110"),
+        "d": deque("111"),
+    }
+
+
+def test_from_codes(codes):
+    root = Node.from_codes(codes)
+    assert root.left.char == "a"
+    assert root.right.left.char == "b"
+    assert root.right.right.left.char == "c"
+    assert root.right.right.right.char == "d"
+
+
+def test_decode(codes):
+    tree = Node.from_codes(codes)
+    assert tree.decode("01001100100111") == "abacabad"
