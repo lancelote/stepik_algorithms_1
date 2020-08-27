@@ -5,7 +5,7 @@
 - [x] 01 - Обзор
 - [x] 02 - Введение: теория и задачи
 - [x] 03 - Введение: практика и разбор задач
-- [ ] 04 - Жадные алгоритмы: теория и задачи
+- [x] 04 - Жадные алгоритмы: теория и задачи
 - [ ] 05 - Жадные алгоритмы: практика и разбор задач
 - [ ] 06 - Разделяй и властвуй: теория и задачи
 - [ ] 07 - Разделяй и властвуй: практика и разбор задач
@@ -26,3 +26,4 @@
     - [Unique Summands](src/module_4/different_summands.py)
     - [Huffman Code](src/module_4/huffman_code.py)
     - [Huffman Decode](src/module_4/huffman_decode.py)
+    - [Binary Heap](src/module_4/custom_heap.py)
