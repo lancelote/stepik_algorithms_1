@@ -16,14 +16,16 @@
 ## Solutions
 
 - Module 2
-    - [Small Fibonacci Number](src/module_2/fibonacci.py)
-    - [Last Fibonacci Digit](src/module_2/fibonacci_last.py)
-    - [Big Fibonacci by Module](src/module_2/big_fibonacci.py)
-    - [GCD](src/module_2/gcd.py)
+  - [Small Fibonacci Number](src/module_2/fibonacci.py)
+  - [Last Fibonacci Digit](src/module_2/fibonacci_last.py)
+  - [Big Fibonacci by Module](src/module_2/big_fibonacci.py)
+  - [GCD](src/module_2/gcd.py)
 - Module 4
-    - [Section by Dots Coverage](src/module_4/section_dot_coverage.py)
-    - [Continuous Backpack](src/module_4/continuous_backpack.py)
-    - [Unique Summands](src/module_4/different_summands.py)
-    - [Huffman Code](src/module_4/huffman_code.py)
-    - [Huffman Decode](src/module_4/huffman_decode.py)
-    - [Binary Heap](src/module_4/custom_heap.py)
+  - [Section by Dots Coverage](src/module_4/section_dot_coverage.py)
+  - [Continuous Backpack](src/module_4/continuous_backpack.py)
+  - [Unique Summands](src/module_4/different_summands.py)
+  - [Huffman Code](src/module_4/huffman_code.py)
+  - [Huffman Decode](src/module_4/huffman_decode.py)
+  - [Binary Heap](src/module_4/custom_heap.py)
+- Module 6
+  - [Binary Search](src/module_6/binary_search.py)
