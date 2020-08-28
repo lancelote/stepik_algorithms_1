@@ -20,15 +20,10 @@ def bin_find(item: int, array: List[int]) -> int:
 
 
 def main() -> None:
-    scanner = sys.stdin
+    scanner = (map(int, line.split()) for line in sys.stdin)
 
-    line1 = next(scanner)
-    _, *raw_array = line1.split()
-    array = [int(x) for x in raw_array]
-
-    line2 = next(scanner)
-    _, *raw_items_to_find = line2.split()
-    items_to_find = [int(x) for x in raw_items_to_find]
+    _, *array = next(scanner)
+    _, *items_to_find = next(scanner)
 
     for item in items_to_find:
         index = bin_find(item, array)
