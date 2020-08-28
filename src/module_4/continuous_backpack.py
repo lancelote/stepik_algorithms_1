@@ -1,4 +1,5 @@
-from typing import List, NamedTuple
+from typing import List
+from typing import NamedTuple
 
 
 class Thing(NamedTuple):

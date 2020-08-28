@@ -1,7 +1,12 @@
 import heapq
-from abc import abstractmethod, ABCMeta
+from abc import ABCMeta
+from abc import abstractmethod
 from collections import Counter
-from typing import List, Tuple, Optional, Dict, Iterator
+from typing import Dict
+from typing import Iterator
+from typing import List
+from typing import Optional
+from typing import Tuple
 
 
 class Node(metaclass=ABCMeta):

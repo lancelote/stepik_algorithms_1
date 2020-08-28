@@ -1,5 +1,7 @@
-from typing import Dict, Deque, Optional
 from collections import deque
+from typing import Deque
+from typing import Dict
+from typing import Optional
 
 
 class Node:

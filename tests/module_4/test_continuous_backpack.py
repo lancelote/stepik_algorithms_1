@@ -1,6 +1,7 @@
 import pytest
 
-from src.module_4.continuous_backpack import max_value, Thing
+from src.module_4.continuous_backpack import max_value
+from src.module_4.continuous_backpack import Thing
 
 
 @pytest.mark.parametrize(

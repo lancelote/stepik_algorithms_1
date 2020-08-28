@@ -1,5 +1,6 @@
 import heapq
-from collections import Counter, defaultdict
+from collections import Counter
+from collections import defaultdict
 
 
 def huffman_encode(string):

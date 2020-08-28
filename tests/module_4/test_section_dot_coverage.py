@@ -1,6 +1,7 @@
 import pytest
 
-from src.module_4.section_dot_coverage import section_dot_coverage, Section
+from src.module_4.section_dot_coverage import Section
+from src.module_4.section_dot_coverage import section_dot_coverage
 
 
 @pytest.mark.parametrize(
