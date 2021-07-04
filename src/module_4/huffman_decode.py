@@ -1,17 +1,18 @@
+from __future__ import annotations
+
 from collections import deque
 from typing import Deque
 from typing import Dict
-from typing import Optional
 
 
 class Node:
     def __init__(self):
-        self.char: Optional[str] = None
-        self.left: Optional[Node] = None
-        self.right: Optional[Node] = None
+        self.char: str | None = None
+        self.left: Node | None = None
+        self.right: Node | None = None
 
     @staticmethod
-    def from_codes(codes: Dict[str, Deque[str]]) -> "Node":
+    def from_codes(codes: Dict[str, Deque[str]]) -> Node:
         root = Node()
 
         for char, code in codes.items():
@@ -19,14 +20,14 @@ class Node:
 
         return root
 
-    def get_left(self) -> "Node":
+    def get_left(self) -> Node:
         if self.left is None:
             left = self.left = Node()
         else:
             left = self.left
         return left
 
-    def get_right(self) -> "Node":
+    def get_right(self) -> Node:
         if self.right is None:
             right = self.right = Node()
         else:
